@@ -8,25 +8,27 @@
 Body {
   font-family: Helvetica, Ariel, sans-serif;
   font-weight: bold;
-  font-color: #24292e
+  font-color: #24292e;
 }
-.center {
-  margin-left: 10%;
-  margin-right: 10%;
-  text align: center
-  width: 100%;
-  border: none;
+.wrapper {
+  width: 80%;
+  margin-left: 10%
 }
+
 .div1 {
-  background-image: url('headerimg.jpg');
-  padding-top: 170px;
+  background-image: url('headerimg.png');
+  padding-top: 850px;
+  width: 100%;
   padding-right: 50px;
   text-align: right;
+  text-align: bottom;
   font-size: 1.5em;
   color: white;
   border-bottom: 1px solid gray;
 }
-.div2 {
+th {
+  margin-left: 10%;
+  margin-right:10%;
   text-align: center;
   color: white;
 }
@@ -44,17 +46,25 @@ a:hover {
 }
 </style>
 <body>
+<div class="wrapper">
   <div class="center"><div class="div1">
     <h1>Earth Data Science Lab</h1>
   </div></div>
   <br>
-  <div class="center"><style="font-size: 25%"><div class="div2">
-    <a href="https://earthdatasci.github.io/People/">People</a>
-    <a href="https://earthdatasci.github.io/Research/">Research</a>
-    <a href="https://earthdatasci.github.io/Resources/">Resources</a>
-    <a href="https://earthdatasci.github.io/Outreach/">Outreach</a>
-    <a href="https://earthdatasci.github.io/Publications/">Publications</a>
-    <a href="https://earthdatasci.github.io/Contact/">Contact</a>
-  </div></style></div></br>
+
+
+  <table style="width:100%">
+  <tr>
+    <th><a href="https://earthdatasci.github.io/People/">People</a></th>
+    <th><a href="https://earthdatasci.github.io/Research/">Research</a></th>
+    <th><a href="https://earthdatasci.github.io/Resources/">Resources</a></th>
+    <th><a href="https://earthdatasci.github.io/Outreach/">Outreach</a></th>
+    <th><a href="https://earthdatasci.github.io/Publications/">Publications</a></th>
+    <th><a href="https://earthdatasci.github.io/Contact/">Contact</a></th>
+  </tr>
+ </table>
+
+
+</br>
+</div>
 </body>
-</html>
