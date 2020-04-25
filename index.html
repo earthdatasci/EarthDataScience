@@ -2,37 +2,49 @@
 <html lang="en">
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Earth Data Science</title>
 </head>
 <style>
 Body {
-  font-family: Helvetica, Ariel, sans-serif;
-  font-weight: bold;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
 }
-.wrapper {
-  width: 80%;
-  margin-left: 8%;
+* {
+  box-sizing: border-box;
 }
-.div1 {
-  background-image: url('earth.png'); 
-  padding-top: 500px;
+#wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 1000px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+#div1 {
+  background-image: url('earth.png');
+  background-repeat: no-repeat;
   width: 100%;
-  padding-right: 50px;
+  height: 200px;
+
+}
+h1 {
   text-align: right;
-  text-align: bottom;
-  font-size: 1.5em;
+  padding-top: 140px;
+  padding-right: 10px;
+  font-size: 3em;
   color: white;
 }
-th {
-  margin-right:10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.flex-container > div {
+  background-color:  #C9C9C2;
+  width: 100%;
+  margin: none;
   text-align: center;
-  color: white;
-  border: none;
-}
-th:hover {
-  background:  #eef1e1;
+  line-height: 30px;
+  font-size: 1em;
 }
 a:link {
   color: #24292e;
@@ -47,19 +59,19 @@ a:hover {
 }
 </style>
 <body>
-<div class="wrapper"><div class="div1">
+<div id="wrapper">
+  <div id="div1">
   <h1>Earth Data Science Lab</h1>
   </div>
-  <table style="width:100%">
-  <tr>
-    <th><a href="https://earthdatasci.github.io/People/">People</a></th>
-    <th><a href="https://earthdatasci.github.io/Research/">Research</a></th>
-    <th><a href="https://earthdatasci.github.io/Resources/">Resources</a></th>
-    <th><a href="https://earthdatasci.github.io/Outreach/">Outreach</a></th>
-    <th><a href="https://earthdatasci.github.io/Publications/">Publications</a></th>
-    <th><a href="https://earthdatasci.github.io/Contact/">Contact</a></th>
-  </tr>
- </table>
+  <div class="flex-container">
+    <div><a href="https://earthdatasci.github.io/People/">People</a></div>
+    <div><a href="https://earthdatasci.github.io/Research/">Research</a></div>
+    <div><a href="https://earthdatasci.github.io/Resources/">Resources</a></div>
+    <div><a href="https://earthdatasci.github.io/Outreach/">Outreach</a></div>
+    <div><a href="https://earthdatasci.github.io/Publications/">Publications</a></div>
+    <div><a href="https://earthdatasci.github.io/Contact/">Contact</a></div>
+  </div>
+
 </div>
 </body>
 </html>
