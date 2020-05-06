@@ -20,7 +20,7 @@ Body {
     padding-left:  10px;
 }
 #div1 {
-  background-image: url('earth.png');
+  background-image: url('images/earth.png');
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
@@ -33,17 +33,30 @@ h1 {
   font-size: 3em;
   color: white;
 }
-.flex-container {
+.flex-container1 {
   display: flex;
   justify-content: space-around;
   background-color: transparent;
 }
-.flex-container > div {
+.flex-container1 > div {
   background-color:  #C9C9C2;
   width: 100%;
   margin: none;
   text-align: center;
   line-height: 30px;
+  font-size: 1em;
+}
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+ background-color: transparent;
+}
+.flex-container2 > div {
+  background-color:transparent;
+  width: 50%
+  margin: 10px;
+  padding: 20px;
+  text-align: justify;
   font-size: 1em;
 }
 a:link {
@@ -57,13 +70,16 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+img {
+  float: left
+}
 </style>
 <body>
 <div id="wrapper">
   <div id="div1"><a href="https://earthdatasci.github.io/EarthDataScience/">
   <h1>Earth Data Science Lab</h1></a>
   </div>
-  <div class="flex-container">
+  <div class="flex-container1">
     <div><a href="https://earthdatasci.github.io/People/">People</a></div>
     <div><a href="https://earthdatasci.github.io/Research/">Research</a></div>
     <div><a href="https://earthdatasci.github.io/Resources/">Resources</a></div>
@@ -71,7 +87,6 @@ a:hover {
     <div><a href="https://earthdatasci.github.io/Publications/">Publications</a></div>
     <div><a href="https://earthdatasci.github.io/Contact/">Contact</a></div>
   </div>
-
 </div>
 </body>
 </html>
