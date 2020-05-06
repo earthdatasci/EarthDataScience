@@ -6,11 +6,11 @@
   <title>Earth Data Science</title>
 </head>
 <style>
-Body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-}
 * {
   box-sizing: border-box;
+}
+body {
+  font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
 }
 #wrapper {
     margin-right: auto;
@@ -24,7 +24,6 @@ Body {
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
-
 }
 h1 {
   text-align: right;
@@ -33,32 +32,36 @@ h1 {
   font-size: 3em;
   color: white;
 }
-.flex-container1 {
+.navbar {
   display: flex;
   justify-content: space-around;
-  background-color: transparent;
-}
-.flex-container1 > div {
   background-color:  #C9C9C2;
-  width: 100%;
-  margin: none;
+  padding: 14px 20px;
+}
+.navbar a {
+  color: #24292e;
+  text-decoration: none;
   text-align: center;
-  line-height: 30px;
-  font-size: 1em;
 }
-.flex-container2 {
+.navbar a:hover {
+  color: white;
+}
+.row {
   display: flex;
-  flex-direction: row;
- background-color: transparent;
+  flex-wrap: wrap;
 }
-.flex-container2 > div {
-  background-color:transparent;
-  width: 50%;
-  margin: 10px;
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
   padding: 20px;
-  text-align: justify;
-  font-size: 1em;
 }
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
 a:link {
   color: #24292e;
   text-decoration: none;
@@ -70,8 +73,10 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
-img {
-  float: left
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
 </style>
 <body>
@@ -79,7 +84,7 @@ img {
   <div id="div1"><a href="https://earthdatasci.github.io/EarthDataScience/">
   <h1>Earth Data Science Lab</h1></a>
   </div>
-  <div class="flex-container1">
+  <div class="navbar">
     <div><a href="https://earthdatasci.github.io/People/">People</a></div>
     <div><a href="https://earthdatasci.github.io/Research/">Research</a></div>
     <div><a href="https://earthdatasci.github.io/Resources/">Resources</a></div>
@@ -87,6 +92,4 @@ img {
     <div><a href="https://earthdatasci.github.io/Publications/">Publications</a></div>
     <div><a href="https://earthdatasci.github.io/Contact/">Contact</a></div>
   </div>
-</div>
-</body>
-</html>
+  <br>
