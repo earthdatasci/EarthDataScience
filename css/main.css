@@ -27,13 +27,18 @@ div.absolute {
     position: absolute;
     right: 0;
     bottom: 0;
+    padding-right: 9px;
+    line-height: 55px;
+    letter-spacing: 0.139em;
+    font-size: 3.2em;
+    color: white;
 }
-h1 {
+/* div.h1 {
   padding-right: 10px;
   line-height: 0;
   font-size: 3em;
   color: white;
-}
+} */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -72,5 +77,8 @@ h1 {
     text-align:center;
     padding-top: 20px;
     padding-bottom: 20px;
+
+
+
   }
 }
